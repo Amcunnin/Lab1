@@ -10,17 +10,17 @@
         android:layout_width="fill_parent"
         android:layout_height="40dp">
         <RadioGroup
-            android:layout_width="match_parent"
+            android:layout_width="wrap_content"
             android:layout_height="match_parent"
             android:orientation="horizontal">
             <RadioButton
                 android:id="@+id/radio_A"
-                android:layout_width="wrap_content"
+                android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:text="@string/radio_A"/>
             <RadioButton
                 android:id="@+id/radio_B"
-                android:layout_width="wrap_content"
+                android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:text="@string/radio_B"/>
         </RadioGroup>
@@ -37,6 +37,7 @@
             android:layout_height="wrap_content"
             android:hint="@string/edit_message" />
         <Button
+            android:id="@+id/saveButton"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="@string/button_send" />
@@ -49,13 +50,10 @@
         android:layout_height="match_parent">
 
         <ListView
+            android:id="@+id/entryList"
             android:text="Hello World!"
             android:layout_width="wrap_content"
-            android:layout_height="wrap_content" />
-        <ListView
-            android:text="Hello World!"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content" />
+            android:layout_height="match_parent" />
 
     </LinearLayout>
 
