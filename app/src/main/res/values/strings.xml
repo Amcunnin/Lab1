@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">Lab 1</string>
+    <string name="edit_message">Write New Entry</string>
+    <string name="button_send">Save</string>
+    <string name="list_name" />
+    <string name="radio_A">List A</string>
+    <string name="radio_B">List B</string>
+</resources>
