@@ -4,38 +4,34 @@
     android:orientation="vertical"
     android:layout_width="wrap_content"
     android:layout_height="wrap_content">
-    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-        xmlns:tools="http://schemas.android.com/tools"
-        android:orientation="horizontal"
-        android:layout_width="fill_parent"
-        android:layout_height="40dp">
         <RadioGroup
             android:layout_width="wrap_content"
             android:layout_height="match_parent"
             android:orientation="horizontal">
             <RadioButton
-                android:id="@+id/radio_A"
+                android:id="@+id/radioA"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:text="@string/radio_A"/>
+                android:text="@string/radioA"
+                android:onClick="onRadioButtonClicked"/>
             <RadioButton
-                android:id="@+id/radio_B"
+                android:id="@+id/radioB"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:text="@string/radio_B"/>
+                android:text="@string/radioB"
+                android:onClick="onRadioButtonClicked"/>
         </RadioGroup>
-    </LinearLayout>
     <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
         xmlns:tools="http://schemas.android.com/tools"
         android:orientation="horizontal"
         android:layout_width="wrap_content"
         android:layout_height="match_parent">
 
-        <EditText android:id="@+id/edit_message"
+        <EditText android:id="@+id/editMessage"
             android:layout_weight="1"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
-            android:hint="@string/edit_message" />
+            android:hint="@string/editMessage" />
         <Button
             android:id="@+id/saveButton"
             android:layout_width="wrap_content"
@@ -51,9 +47,12 @@
 
         <ListView
             android:id="@+id/entryList"
-            android:text="Hello World!"
             android:layout_width="wrap_content"
-            android:layout_height="match_parent" />
+            android:layout_height="match_parent"
+            android:background="#a6dddddd"
+            android:divider="#545454"
+            android:visibility="visible"
+            android:textAlignment="center" />
 
     </LinearLayout>
 
